@@ -1,23 +1,45 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import MuestraDeEstadoSimple from './componentes/MuestraDeEstadoSimple';
 import './App.css';
 
-function App() {
+const App = () => {
+
+  const [ cantidadDeClicks, setCantidadDeClicks ] = useState(0)
+  const [ nombreUsuario, setNombreUsuario ] = useState("usuario")
+  const [ valorDelInput, setValorDelInput ] = useState("")
+
+  const handleClick = () => {
+    setCantidadDeClicks(cantidadDeClicks + 1)
+  }
+
+  const handleClickSaludo = () => {
+    setNombreUsuario(valorDelInput)
+  }
+
+  const handleChange = (evento) => {
+    setValorDelInput(evento.target.value)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <h1>Contador de clicks</h1>
+
+    <button onClick={handleClick}>Agregar un click</button>
+
+    <p>Cantidad de clicks: {cantidadDeClicks}</p>
+
+
+
+    <h2>Saludador de usuarios</h2>
+
+    <input type="text" placeholder="Escribi tu nombre" onChange={handleChange} />
+    <button onClick={handleClickSaludo}>Saludar</button>
+
+    <h3>Hola, {nombreUsuario}</h3>
+
+    <MuestraDeEstadoSimple />
+
     </div>
   );
 }
