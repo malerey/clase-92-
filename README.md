@@ -14,4 +14,4 @@ Cuando hago click en el - o + de un contador, debe actualizarse SOLO el valor de
 (Tip: hay dos maneras principales de hacer esto: trata de identificar ambas. Una de ellas es algo mas repetitiva: si notas que tu codigo tiene muchas partes iguales, pensá como podrias reutilizar codigo)
 
 
-3. Una vez funcionando los tres contadores, agregar un boton que sea "Borrar todos", que vuelva el valor de todos los contadores a 0. 
+3. OPTATIVA: Una vez funcionando los tres contadores, agregar un boton que sea "Borrar todos", que vuelva el valor de todos los contadores a 0. 
