@@ -11,7 +11,7 @@ Cuando el usuario hace click en +, se suma un numero
 
 2. Hacer tres contadores que funcionen de la misma manera. 
 Cuando hago click en el - o + de un contador, debe actualizarse SOLO el valor de ese contador, y no de los demas. 
-(Tip: hay dos maneras principales de hacer esto: trata de identificar ambas)
+(Tip: hay dos maneras principales de hacer esto: trata de identificar ambas. Una de ellas es algo mas repetitiva: si notas que tu codigo tiene muchas partes iguales, pensá como podrias reutilizar codigo)
 
 
 3. Una vez funcionando los tres contadores, agregar un boton que sea "Borrar todos", que vuelva el valor de todos los contadores a 0. 
